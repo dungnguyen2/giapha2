@@ -1,177 +1,154 @@
 <!DOCTYPE html>
-<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head lang="en">
-	<title>My Family Tree - Places</title>
+<html xml:lang="en" lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+<head dir="ltr" lang="en">
+	<title>Gia Pha - Places</title>
 	<meta charset="UTF-8" />
-	<meta name ="viewport" content="width=device-width; height=device-height; initial-scale=1.0; minimum-scale=0.5; maximum-scale=10.0; user-scalable=yes" />
+	<meta name ="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=0.5, maximum-scale=10.0, user-scalable=yes" />
 	<meta name ="apple-mobile-web-app-capable" content="yes" />
-	<meta name="generator" content="Gramps GrampsAIO64-5.1.3-2 http://gramps-project.org/" />
+	<meta name="generator" content="Gramps AIO64-5.2.3-r1-aa03f5a http://gramps-project.org/" />
 	<meta name="author" content="" />
+	<meta name="robots" content="noindex" />
+	<meta name="googlebot" content="noindex" />
 	<link href="images/favicon2.ico" rel="shortcut icon" type="image/x-icon" />
+	<link href="css/ancestortree.css" media="screen" rel="stylesheet" type="text/css" />
 	<link href="css/narrative-print.css" media="print" rel="stylesheet" type="text/css" />
 	<link href="css/narrative-screen.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="css/Basic-Ash.css" media="screen" rel="alternate stylesheet" title="Basic-Ash" type="text/css" />
+	<link href="css/Basic-Blue.css" media="screen" rel="alternate stylesheet" title="Basic-Blue" type="text/css" />
+	<link href="css/Basic-Cypress.css" media="screen" rel="alternate stylesheet" title="Basic-Cypress" type="text/css" />
+	<link href="css/Basic-Lilac.css" media="screen" rel="alternate stylesheet" title="Basic-Lilac" type="text/css" />
+	<link href="css/Basic-Peach.css" media="screen" rel="alternate stylesheet" title="Basic-Peach" type="text/css" />
+	<link href="css/Basic-Spruce.css" media="screen" rel="alternate stylesheet" title="Basic-Spruce" type="text/css" />
+	<link href="css/Mainz.css" media="screen" rel="alternate stylesheet" title="Mainz" type="text/css" />
+	<link href="css/Nebraska.css" media="screen" rel="alternate stylesheet" title="Nebraska" type="text/css" />
 	<script>function navFunction() { var x = document.getElementById("dropmenu"); if (x.className === "nav") { x.className += " responsive"; } else { x.className = "nav"; } }</script>
 </head>
-<body>
+<body dir="ltr">
 	<div id="outerwrapper">
-		<div id="header">
-			<a href="javascript:void(0);" class="navIcon" onclick="navFunction()">&#8801;</a>
-			<h1 id="SiteTitle">My Family Tree</h1>
+		<div class="ltr" id="header">
+			<button href="javascript:void(0);" class="navIcon" onclick="navFunction()">&#8801;</button>
+			<h1 class="nav" id="SiteTitle">Gia Pha</h1>
 		</div>
-		<div class="wrappernav" id="nav" role="navigation">
+		<div class="wrappernav ltr" id="nav" role="navigation">
 			<div class="container">
-				<ul class="nav" id="dropmenu">
+				<ul class="nav dropmenu" id="dropmenu">
 					<li><a href="individuals.html" title="Individuals">Individuals</a></li>
 					<li><a href="index.html" title="Surnames">Surnames</a></li>
-					<li><a href="media.html" title="Media">Media</a></li>
-					<li><a href="thumbnails.html" title="Thumbnails">Thumbnails</a></li>
-					<li><a onclick="history.go(-1);">Previous</a></li>
-					<li><a onclick="history.go(+1);">Next</a></li>
+					<li><a href="updates.html" title="Updates">Updates</a></li>
 				</ul>
 			</div>
 		</div>
+		<button id="gototop" onclick="GoToTop()" title="Go to top">
+			<svg class="triangle" viewBox="0 0 100 100">
+				<polygon points="0,100 100,100, 50,10">
+				</polygon>
+			</svg>
+		</button>
+	
+<script>
+//Get the button
+var gototop = document.getElementById("gototop");
+
+// When the user scrolls down 200px from the top of the document,
+// show the button
+window.onscroll = function() {scroll()};
+
+function scroll() {
+  if (document.body.scrollTop > 200 ||
+      document.documentElement.scrollTop > 200) {
+    gototop.style.display = "block";
+  } else {
+    gototop.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function GoToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
 		<div class="content" id="Places">
 			<p id="description">
 			This page contains an index of all the places in the database, sorted by their title. Clicking on a place&#8217;s title will take you to that place&#8217;s page.
 			</p>
-			<div id="alphanav">
-				<ul>
-					<li><a href="#Đ" title="Alphabet Menu: Đ">Đ</a></li>
-					<li><a href="#H" title="Alphabet Menu: H">H</a></li>
+			<div id="ltr">
+				<ul class="ltr">
+					<li><a href="#D" title="Alphabet Menu: D">D</a></li>
 					<li><a href="#M" title="Alphabet Menu: M">M</a></li>
 					<li><a href="#N" title="Alphabet Menu: N">N</a></li>
 					<li><a href="#P" title="Alphabet Menu: P">P</a></li>
-					<li><a href="#T" title="Alphabet Menu: T">T</a></li>
 					<li><a href="#X" title="Alphabet Menu: X">X</a></li>
 				</ul>
 			</div>
-			<table class="infolist primobjlist placelist">
+			<table class="infolist primobjlist placelist ltr">
 				<thead>
 					<tr>
 						<th class="ColumnLetter">Letter</th>
-						<th class="ColumnName"> Name</th>
-						<th class="ColumnState">State/ Province</th>
+						<th class="ColumnName">Name</th>
+						<th class="ColumnState">State/Province</th>
 						<th class="ColumnCountry">Country</th>
+						<tr class = "BeginLetter">
+							<td class="ColumnLetter"><a id="D" name="D" title="Places beginning with letter D">D</a></td>
+							<td class="ColumnName">
+								<a href="plc/e/8/ebeb6088cef1de759c3ba7f488e.html" title="Đồng dâu">
+								Đồng dâu
+								</a>
+							</td>
+							<td class="ColumnState">&nbsp;</td>
+							<td class="ColumnCountry">&nbsp;</td>
+						</tr>
+						<tr class = "BeginLetter">
+							<td class="ColumnLetter"><a id="M" name="M" title="Places beginning with letter M">M</a></td>
+							<td class="ColumnName">
+								<a href="plc/2/f/ebeb67b4bba481b27e53f7172f2.html" title="Mộ tại Đồng Dâu">
+								Mộ tại Đồng Dâu
+								</a>
+							</td>
+							<td class="ColumnState">&nbsp;</td>
+							<td class="ColumnCountry">&nbsp;</td>
+						</tr>
+						<tr class = "BeginLetter">
+							<td class="ColumnLetter"><a id="N" name="N" title="Places beginning with letter N">N</a></td>
+							<td class="ColumnName">
+								<a href="plc/0/c/ebeb67932b06f5c77def69708c0.html" title="Người xã Diên Phước.">
+								Người xã Diên Phước.
+								</a>
+							</td>
+							<td class="ColumnState">&nbsp;</td>
+							<td class="ColumnCountry">&nbsp;</td>
+						</tr>
+						<tr class = "BeginLetter">
+							<td class="ColumnLetter"><a id="P" name="P" title="Places beginning with letter P">P</a></td>
+							<td class="ColumnName">
+								<a href="plc/4/1/ebeb50a7e3aa582e2f66a8d614.html" title="Phú Nhiêu, Quãng Ngãi">
+								Phú Nhiêu, Quãng Ngãi
+								</a>
+							</td>
+							<td class="ColumnState">&nbsp;</td>
+							<td class="ColumnCountry">&nbsp;</td>
+						</tr>
+						<tr class = "BeginLetter">
+							<td class="ColumnLetter"><a id="X" name="X" title="Places beginning with letter X">X</a></td>
+							<td class="ColumnName">
+								<a href="plc/8/5/ebeb4d6a4cd59a5eb1cfb018858.html" title="Xã Phú Nhiêu, Quãng Ngãi">
+								Xã Phú Nhiêu, Quãng Ngãi
+								</a>
+							</td>
+							<td class="ColumnState">&nbsp;</td>
+							<td class="ColumnCountry">&nbsp;</td>
+						</tr>
 					</tr>
 				</thead>
 				<tbody>
-					<tr class = "BeginLetter">
-						<td class="ColumnLetter"><a name="Đ" title="Places beginning with letter Đ">Đ</a></td>
-						<td class="ColumnName">
-							<a href="plc/e/8/ebeb6088cef1de759c3ba7f488e.html" title="Đồng dâu">
-							Đồng dâu
-							</a>
-						</td>
-						<td class="ColumnState">&nbsp;</td>
-						<td class="ColumnCountry">&nbsp;</td>
-					</tr>
-					<tr class = "BeginLetter">
-						<td class="ColumnLetter"><a name="H" title="Places beginning with letter H">H</a></td>
-						<td class="ColumnName">
-							<a href="plc/8/3/f05f63fd6187e3247bb6b794538.html" title="Hà Nội">
-							Hà Nội
-							</a>
-						</td>
-						<td class="ColumnState">&nbsp;</td>
-						<td class="ColumnCountry">&nbsp;</td>
-					</tr>
-					<tr>
-						<td class="ColumnLetter">&nbsp;</td>
-						<td class="ColumnName">
-							<a href="plc/1/9/f05e65464f72a2d328c98eab091.html" title="Hoà Khánh, Hoà Vang, Quảng Nam - Đà Nẵng">
-							Hoà Khánh, Hoà Vang, Quảng Nam - Đà Nẵng
-							</a>
-						</td>
-						<td class="ColumnState">&nbsp;</td>
-						<td class="ColumnCountry">&nbsp;</td>
-					</tr>
-					<tr>
-						<td class="ColumnLetter">&nbsp;</td>
-						<td class="ColumnName">
-							<a href="plc/4/7/f05e64e74b94a5f347e9b7f6f74.html" title="Hưng Mỹ, Thăng Bình, Quảng Nam">
-							Hưng Mỹ, Thăng Bình, Quảng Nam
-							</a>
-						</td>
-						<td class="ColumnState">&nbsp;</td>
-						<td class="ColumnCountry">&nbsp;</td>
-					</tr>
-					<tr class = "BeginLetter">
-						<td class="ColumnLetter"><a name="M" title="Places beginning with letter M">M</a></td>
-						<td class="ColumnName">
-							<a href="plc/2/f/ebeb67b4bba481b27e53f7172f2.html" title="Mộ tại Đồng Dâu">
-							Mộ tại Đồng Dâu
-							</a>
-						</td>
-						<td class="ColumnState">&nbsp;</td>
-						<td class="ColumnCountry">&nbsp;</td>
-					</tr>
-					<tr class = "BeginLetter">
-						<td class="ColumnLetter"><a name="N" title="Places beginning with letter N">N</a></td>
-						<td class="ColumnName">
-							<a href="plc/2/5/f05e699b23d42cbf82795f02752.html" title="Nghĩa Trang ND Thành Phố Hội An">
-							Nghĩa Trang ND Thành Phố Hội An
-							</a>
-						</td>
-						<td class="ColumnState">&nbsp;</td>
-						<td class="ColumnCountry">&nbsp;</td>
-					</tr>
-					<tr>
-						<td class="ColumnLetter">&nbsp;</td>
-						<td class="ColumnName">
-							<a href="plc/0/c/ebeb67932b06f5c77def69708c0.html" title="Người xã Diên Phước.">
-							Người xã Diên Phước.
-							</a>
-						</td>
-						<td class="ColumnState">&nbsp;</td>
-						<td class="ColumnCountry">&nbsp;</td>
-					</tr>
-					<tr class = "BeginLetter">
-						<td class="ColumnLetter"><a name="P" title="Places beginning with letter P">P</a></td>
-						<td class="ColumnName">
-							<a href="plc/4/1/ebeb50a7e3aa582e2f66a8d614.html" title="Phú Nhiêu, Quãng Ngãi">
-							Phú Nhiêu, Quãng Ngãi
-							</a>
-						</td>
-						<td class="ColumnState">&nbsp;</td>
-						<td class="ColumnCountry">&nbsp;</td>
-					</tr>
-					<tr class = "BeginLetter">
-						<td class="ColumnLetter"><a name="T" title="Places beginning with letter T">T</a></td>
-						<td class="ColumnName">
-							<a href="plc/4/0/f05e675aa17126e37723650e104.html" title="Thạch Thang, Hải Châu, Đà Nẵng">
-							Thạch Thang, Hải Châu, Đà Nẵng
-							</a>
-						</td>
-						<td class="ColumnState">&nbsp;</td>
-						<td class="ColumnCountry">&nbsp;</td>
-					</tr>
-					<tr>
-						<td class="ColumnLetter">&nbsp;</td>
-						<td class="ColumnName">
-							<a href="plc/2/c/f05e660447e44979bd1d44632c2.html" title="Tuần Dưỡng, Thăng Bình, Quảng Nam">
-							Tuần Dưỡng, Thăng Bình, Quảng Nam
-							</a>
-						</td>
-						<td class="ColumnState">&nbsp;</td>
-						<td class="ColumnCountry">&nbsp;</td>
-					</tr>
-					<tr class = "BeginLetter">
-						<td class="ColumnLetter"><a name="X" title="Places beginning with letter X">X</a></td>
-						<td class="ColumnName">
-							<a href="plc/8/5/ebeb4d6a4cd59a5eb1cfb018858.html" title="Xã Phú Nhiêu, Quãng Ngãi">
-							Xã Phú Nhiêu, Quãng Ngãi
-							</a>
-						</td>
-						<td class="ColumnState">&nbsp;</td>
-						<td class="ColumnCountry">&nbsp;</td>
-					</tr>
 				</tbody>
 			</table>
 		</div>
 		<div class="fullclear"></div>
 		<div id="footer">
 			<p id="createdate">
-			Generated by <a href="http://gramps-project.org/">Gramps</a> GrampsAIO64-5.1.3-2<br />Last change was the 2022-05-06 16:07:43
+			Generated by <a href="http://gramps-project.org/">Gramps</a> AIO64-5.2.3-r1-aa03f5a<br />Last change was the 2021-05-17 12:46:50
 			</p>
 			<p id="copyright">
 			

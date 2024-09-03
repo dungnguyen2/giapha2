@@ -1,36 +1,76 @@
 <!DOCTYPE html>
-<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head lang="en">
-	<title>My Family Tree - Nguyễn, Văn Quý</title>
+<html xml:lang="en" lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+<head dir="ltr" lang="en">
+	<title>Gia Pha - Nguyễn, Văn Quý</title>
 	<meta charset="UTF-8" />
-	<meta name ="viewport" content="width=device-width; height=device-height; initial-scale=1.0; minimum-scale=0.5; maximum-scale=10.0; user-scalable=yes" />
+	<meta name ="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=0.5, maximum-scale=10.0, user-scalable=yes" />
 	<meta name ="apple-mobile-web-app-capable" content="yes" />
-	<meta name="generator" content="Gramps GrampsAIO64-5.1.3-2 http://gramps-project.org/" />
+	<meta name="generator" content="Gramps AIO64-5.2.3-r1-aa03f5a http://gramps-project.org/" />
 	<meta name="author" content="" />
+	<meta name="robots" content="noindex" />
+	<meta name="googlebot" content="noindex" />
 	<link href="../../../images/favicon2.ico" rel="shortcut icon" type="image/x-icon" />
+	<link href="../../../css/ancestortree.css" media="screen" rel="stylesheet" type="text/css" />
 	<link href="../../../css/narrative-print.css" media="print" rel="stylesheet" type="text/css" />
 	<link href="../../../css/narrative-screen.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="../../../css/Basic-Ash.css" media="screen" rel="alternate stylesheet" title="Basic-Ash" type="text/css" />
+	<link href="../../../css/Basic-Blue.css" media="screen" rel="alternate stylesheet" title="Basic-Blue" type="text/css" />
+	<link href="../../../css/Basic-Cypress.css" media="screen" rel="alternate stylesheet" title="Basic-Cypress" type="text/css" />
+	<link href="../../../css/Basic-Lilac.css" media="screen" rel="alternate stylesheet" title="Basic-Lilac" type="text/css" />
+	<link href="../../../css/Basic-Peach.css" media="screen" rel="alternate stylesheet" title="Basic-Peach" type="text/css" />
+	<link href="../../../css/Basic-Spruce.css" media="screen" rel="alternate stylesheet" title="Basic-Spruce" type="text/css" />
+	<link href="../../../css/Mainz.css" media="screen" rel="alternate stylesheet" title="Mainz" type="text/css" />
+	<link href="../../../css/Nebraska.css" media="screen" rel="alternate stylesheet" title="Nebraska" type="text/css" />
 	<script>function navFunction() { var x = document.getElementById("dropmenu"); if (x.className === "nav") { x.className += " responsive"; } else { x.className = "nav"; } }</script>
-	<link href="../../../css/ancestortree.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="../../../css/lightbox.css" media="screen" rel="stylesheet" type="text/css" />
+	<script src="../../../css/lightbox.js" type="text/javascript"></script>
 </head>
-<body>
+<body dir="ltr">
 	<div id="outerwrapper">
-		<div id="header">
-			<a href="javascript:void(0);" class="navIcon" onclick="navFunction()">&#8801;</a>
-			<h1 id="SiteTitle">My Family Tree</h1>
+		<div class="ltr" id="header">
+			<button href="javascript:void(0);" class="navIcon" onclick="navFunction()">&#8801;</button>
+			<h1 class="nav" id="SiteTitle">Gia Pha</h1>
 		</div>
-		<div class="wrappernav" id="nav" role="navigation">
+		<div class="wrappernav ltr" id="nav" role="navigation">
 			<div class="container">
-				<ul class="nav" id="dropmenu">
+				<ul class="nav dropmenu" id="dropmenu">
 					<li class = "CurrentSection"><a href="../../../individuals.html" title="Individuals">Individuals</a></li>
 					<li><a href="../../../index.html" title="Surnames">Surnames</a></li>
-					<li><a href="../../../media.html" title="Media">Media</a></li>
-					<li><a href="../../../thumbnails.html" title="Thumbnails">Thumbnails</a></li>
-					<li><a onclick="history.go(-1);">Previous</a></li>
-					<li><a onclick="history.go(+1);">Next</a></li>
+					<li><a href="../../../updates.html" title="Updates">Updates</a></li>
 				</ul>
 			</div>
 		</div>
+		<button id="gototop" onclick="GoToTop()" title="Go to top">
+			<svg class="triangle" viewBox="0 0 100 100">
+				<polygon points="0,100 100,100, 50,10">
+				</polygon>
+			</svg>
+		</button>
+	
+<script>
+//Get the button
+var gototop = document.getElementById("gototop");
+
+// When the user scrolls down 200px from the top of the document,
+// show the button
+window.onscroll = function() {scroll()};
+
+function scroll() {
+  if (document.body.scrollTop > 200 ||
+      document.documentElement.scrollTop > 200) {
+    gototop.style.display = "block";
+  } else {
+    gototop.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function GoToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
 		<div class="content" id="IndividualDetail">
 			<div class="snapshot">
 				<div class="thumbnail">
@@ -70,21 +110,24 @@
 					</tr>
 					<tr>
 						<td class="ColumnAttribute">Age at Death</td>
-						<td class="ColumnValue">82 years, 11 months, 5 days</td>
+						<td class="ColumnValue">81 years</td>
 					</tr>
 				</table>
 			</div>
 			<div class="subsection narrative">
-				<h4>Narrative</h4>
-				<div class="grampsstylednote">
-					<p>
-					Nguyễn Văn Quý tức Nguyễn  Quý - Học ở Trường Quôc học Huế. Sau làm Bưu Điện ở Huế, rồi đổi vào Đà Nẵng, Hội An. Tức là ông Thông Quý. Sau cách mạng Tháng 8 làm Trưởng Phòng Bưu vụ Bưu Điện Tỉnh Quảng Nam, Trưởng Phòng Bưu Điên Tiên Phước, Thăng Bình.
-					</p>
+				<h4>Notes</h4>
+				<div class="subsection narrative" id="toggle_note" style="display:block">
+					<h4>Note</h4>
+					<div class="grampsstylednote">
+						<p>
+						Nguyễn Văn Quý tức Nguyễn  Quý - Học ở Trường Quôc học Huế. Sau làm Bưu Điện ở Huế, rồi đổi vào Đà Nẵng, Hội An. Tức là ông Thông Quý. Sau cách mạng Tháng 8 làm Trưởng Phòng Bưu vụ Bưu Điện Tỉnh Quảng Nam, Trưởng Phòng Bưu Điên Tiên Phước, Thăng Bình.
+						</p>
+					</div>
 				</div>
 			</div>
 			<div class="subsection" id="events">
 				<h4>Events</h4>
-				<table class="infolist eventlist">
+				<table class="infolist eventlist toggle_event ltr" id="toggle_event" style="display:block">
 					<thead>
 						<tr>
 							<th class="ColumnEvent">Event</th>
@@ -96,23 +139,16 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td class="ColumnEvent">
+							<td class="ColumnEvent" rowspan="2">
 							Birth
 							</td>
-							<td class="ColumnDate">1904</td>
-							<td class="ColumnPlace">
-								<a href="../../../plc/2/c/f05e660447e44979bd1d44632c2.html" title="Tuần Dưỡng, Thăng Bình, Quảng Nam">
-								Tuần Dưỡng, Thăng Bình, Quảng Nam
-								</a>
-							</td>
+							<td class="ColumnDate">1905</td>
+							<td class="ColumnPlace">&nbsp;</td>
 							<td class="ColumnDescription">&nbsp;</td>
 							<td class="ColumnSources" rowspan="2">
 							&nbsp;
 							</td>
 							<tr>
-								<td class="ColumnEvent">
-								
-								</td>
 								<td class="ColumnNotes" colspan="3">
 									<div>
 									</div>
@@ -120,47 +156,16 @@
 							</tr>
 						</tr>
 						<tr>
-							<td class="ColumnEvent">
+							<td class="ColumnEvent" rowspan="2">
 							Death
 							</td>
-							<td class="ColumnDate">6 December 1986</td>
-							<td class="ColumnPlace">
-								<a href="../../../plc/4/0/f05e675aa17126e37723650e104.html" title="Thạch Thang, Hải Châu, Đà Nẵng">
-								Thạch Thang, Hải Châu, Đà Nẵng
-								</a>
-							</td>
+							<td class="ColumnDate">1986</td>
+							<td class="ColumnPlace">&nbsp;</td>
 							<td class="ColumnDescription">&nbsp;</td>
 							<td class="ColumnSources" rowspan="2">
 							&nbsp;
 							</td>
 							<tr>
-								<td class="ColumnEvent">
-								
-								</td>
-								<td class="ColumnNotes" colspan="3">
-									<div>
-									</div>
-								</td>
-							</tr>
-						</tr>
-						<tr>
-							<td class="ColumnEvent">
-							Burial
-							</td>
-							<td class="ColumnDate">28 January 2021</td>
-							<td class="ColumnPlace">
-								<a href="../../../plc/2/5/f05e699b23d42cbf82795f02752.html" title="Nghĩa Trang ND Thành Phố Hội An">
-								Nghĩa Trang ND Thành Phố Hội An
-								</a>
-							</td>
-							<td class="ColumnDescription">&nbsp;</td>
-							<td class="ColumnSources" rowspan="2">
-							&nbsp;
-							</td>
-							<tr>
-								<td class="ColumnEvent">
-								
-								</td>
 								<td class="ColumnNotes" colspan="3">
 									<div>
 									</div>
@@ -172,7 +177,7 @@
 			</div>
 			<div class="subsection" id="parents">
 				<h4>Parents</h4>
-				<table class="infolist">
+				<table class="infolist toggle_parent ltr" id="toggle_parent" style="display:block">
 					<thead>
 						<tr>
 							<th class="ColumnAttribute">Relation to main person</th>
@@ -229,8 +234,8 @@
 						<tr>
 							<td class="ColumnAttribute">&nbsp;&nbsp;&nbsp;&nbsp;</td>
 							<td class="ColumnValue">&nbsp;&nbsp;&nbsp;&nbsp;<b>Nguyễn, Văn Quý</b></td>
-							<td class="ColumnDate">1904</td>
-							<td class="ColumnDate">6 December 1986</td>
+							<td class="ColumnDate">1905</td>
+							<td class="ColumnDate">1986</td>
 							<td class="ColumnValue"></td>
 						</tr>
 					</tbody>
@@ -238,7 +243,7 @@
 			</div>
 			<div class="subsection" id="families">
 				<h4>Families</h4>
-				<table class="infolist">
+				<table class="infolist" id="toggle_families" style="display:block">
 					<tr class="BeginFamily">
 						<td class="ColumnValue" colspan="3"><H4 class="subsection"><a href="" title="Family of Nguyễn, Văn Quý and Nguyễn, Thị Nam">Family of Nguyễn, Văn Quý and Nguyễn, Thị Nam</a></H4></td>
 					</tr>
@@ -248,17 +253,16 @@
 						<td class="ColumnValue">
 							<a href="../../../ppl/2/f/ebeb2d73fd3e3a4a47f6b680f2.html">Nguyễn, Thị Nam</a>
 						 ( * 
-						1909
+						
 						 + 
-						27 August 1981
+						1981
 						 )
 						</td>
 					</tr>
 					<tr>
-						<td class="ColumnType">&nbsp;</td>
 						<td class="ColumnAttribute">Children</td>
-						<td class="ColumnValue" />
-						<table class="infolist eventlist">
+						<td class="ColumnValue Child" colspan="2" />
+						<table class="infolist eventlist ltr">
 							<thead>
 								<tr>
 									<th class="ColumnName">Name</th>
@@ -267,14 +271,14 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr><td /><a href="../../../ppl/e/6/ebeb2e2a7776a96a94ac4e2386e.html">Nguyên, Ngọc</a><td>5 September 1932</td><td></td></tr>
-								<tr><td /><a href="../../../ppl/8/d/ebeb234571751914ee1b16dc0d8.html">Nguyễn, Ngọc Diệp</a><td>14 November 1935</td><td></td></tr>
-								<tr><td /><a href="../../../ppl/3/b/ebeb312b3465ce27353032aa9b3.html">Nguyễn, Thị Xuân Thảo</a><td>15 October 1937</td><td></td></tr>
+								<tr><td /><a href="../../../ppl/e/6/ebeb2e2a7776a96a94ac4e2386e.html">Nguyên, Ngọc</a><td>1932-09-05</td><td></td></tr>
+								<tr><td /><a href="../../../ppl/8/d/ebeb234571751914ee1b16dc0d8.html">Nguyễn, Ngọc Diệp</a><td>1935-11-14</td><td></td></tr>
+								<tr><td /><a href="../../../ppl/3/b/ebeb312b3465ce27353032aa9b3.html">Nguyễn, Thị Xuân Thảo</a><td>1937-10-15</td><td></td></tr>
 								<tr><td /><a href="../../../ppl/a/8/ebeb31875391516fdce6d1a208a.html">Nguyễn, Ngọc Trác</a><td></td><td></td></tr>
 								<tr><td /><a href="../../../ppl/9/3/ebeb31c4486616affaeca91c139.html">Nguyễn, Ngọc Ấn</a><td></td><td></td></tr>
 								<tr><td /><a href="../../../ppl/d/4/ebeb31e33996343d60430e7764d.html">Nguyễn, Ngọc Bích</a><td></td><td></td></tr>
 								<tr><td /><a href="../../../ppl/6/7/ebeb31fb9b552898fcd2d16d876.html">Nguyễn, Vô Danh</a><td></td><td></td></tr>
-								<tr><td /><a href="../../../ppl/b/c/ebeb3237975238e121a55c461cb.html">Nguyễn, Thị Xuân Hoa</a><td>1 September 1947</td><td></td></tr>
+								<tr><td /><a href="../../../ppl/b/c/ebeb3237975238e121a55c461cb.html">Nguyễn, Thị Xuân Hoa</a><td>1947-09-01</td><td></td></tr>
 								<tr><td /><a href="../../../ppl/b/6/ebeb32743863893a68eab2f996b.html">Nguyễn, Vô Danh</a><td></td><td></td></tr>
 								<tr><td /><a href="../../../ppl/9/0/ec389093ed3348330e15d7a8309.html">Nguyễn, Vô Danh</a><td></td><td></td></tr>
 							</tbody>
@@ -284,41 +288,127 @@
 			</div>
 			<div class="subsection" id="indivgallery">
 				<h4>Media</h4>
-				<div class="thumbnail">
-					<a href="../../../img/1/1/ebf22344963580a0cdc7e19c611.html" title="NguyenVanQuy">
-						<img alt="NguyenVanQuy" src="../../../thumb/1/1/ebf22344963580a0cdc7e19c611.png" />
-						<p>NguyenVanQuy</p>
-					</a>
-				</div>
-				<div class="thumbnail">
-					<a href="../../../img/b/f/ebf1a78d83d5f5d0f86d45167fb.html" title="34">
-						<img alt="34" src="../../../thumb/b/f/ebf1a78d83d5f5d0f86d45167fb.png" />
-						<p>34</p>
-					</a>
-				</div>
-				<div class="thumbnail">
-					<a href="../../../img/6/b/ebf1a7a7da54870844920e60eb6.html" title="35">
-						<img alt="35" src="../../../thumb/6/b/ebf1a7a7da54870844920e60eb6.png" />
-						<p>35</p>
-					</a>
-				</div>
-				<div class="thumbnail">
-					<a href="../../../img/d/0/ebf1a7bebe8f47b74111d5150d.html" title="36">
-						<img alt="36" src="../../../thumb/d/0/ebf1a7bebe8f47b74111d5150d.png" />
-						<p>36</p>
-					</a>
-				</div>
-				<div class="thumbnail">
-					<a href="../../../img/c/3/ebf1a777b55d0113c48836083c.html" title="33">
-						<img alt="33" src="../../../thumb/c/3/ebf1a777b55d0113c48836083c.png" />
-						<p>33</p>
-					</a>
+				<div id="toggle_media" style="display:block">
+					<div class="MediaRow">
+						<div class="MediaColumn ltr">
+							<img class="hover-shadow" onclick="openModal();currentSlide(1)" src="../../../thumb/1/1/ebf22344963580a0cdc7e19c611.png" />
+						</div>
+						<div class="MediaColumn ltr">
+							<img class="hover-shadow" onclick="openModal();currentSlide(2)" src="../../../thumb/b/f/ebf1a78d83d5f5d0f86d45167fb.png" />
+						</div>
+						<div class="MediaColumn ltr">
+							<img class="hover-shadow" onclick="openModal();currentSlide(3)" src="../../../thumb/6/b/ebf1a7a7da54870844920e60eb6.png" />
+						</div>
+						<div class="MediaColumn ltr">
+							<img class="hover-shadow" onclick="openModal();currentSlide(4)" src="../../../thumb/d/0/ebf1a7bebe8f47b74111d5150d.png" />
+						</div>
+						<div class="MediaColumn ltr">
+							<img class="hover-shadow" onclick="openModal();currentSlide(5)" src="../../../thumb/c/3/ebf1a777b55d0113c48836083c.png" />
+						</div>
+						<div class="MediaColumn ltr">
+							<img class="hover-shadow" onclick="openModal();currentSlide(6)" src="../../../thumb/1/d/ebf1f23ecc5170f26d0e75176d1.png" />
+						</div>
+						<div class="MediaColumn ltr">
+							<img class="hover-shadow" onclick="openModal();currentSlide(7)" src="../../../thumb/b/d/ebf1f2555cc374c11178b7022db.png" />
+						</div>
+						<div class="MediaColumn ltr">
+							<img class="hover-shadow" onclick="openModal();currentSlide(8)" src="../../../thumb/5/7/ebf1f28a4395e7e698bf4b8cf75.png" />
+						</div>
+						<div class="MediaColumn ltr">
+							<img class="hover-shadow" onclick="openModal();currentSlide(9)" src="../../../thumb/b/4/ebf1f2f5b93785e9d19e8166e4b.png" />
+						</div>
+					</div>
+					<div class="ModalClass" id="MediaModal">
+						<span class="MediaClose MediaCursor" onclick="closeModal()">&times;</span>
+						<div class="ModalContent">
+							<a class="MediaPrev" onclick="plusSlides(-1)">
+							&#10094;
+							</a>
+							<a class="MediaNext" onclick="plusSlides(1)">
+							&#10095;
+							</a>
+							<div class="MediaSlide">
+								<div class="MediaNumber">
+								1/9 - NguyenVanQuy
+								</div>
+								<a href="../../../img/1/1/ebf22344963580a0cdc7e19c611.html">
+									<img src="../../../images/1/1/ebf22344963580a0cdc7e19c611.png" style="width:100%" />
+								</a>
+							</div>
+							<div class="MediaSlide">
+								<div class="MediaNumber">
+								2/9 - 34
+								</div>
+								<a href="../../../img/b/f/ebf1a78d83d5f5d0f86d45167fb.html">
+									<img src="../../../images/b/f/ebf1a78d83d5f5d0f86d45167fb.jpg" style="width:100%" />
+								</a>
+							</div>
+							<div class="MediaSlide">
+								<div class="MediaNumber">
+								3/9 - 35
+								</div>
+								<a href="../../../img/6/b/ebf1a7a7da54870844920e60eb6.html">
+									<img src="../../../images/6/b/ebf1a7a7da54870844920e60eb6.jpg" style="width:100%" />
+								</a>
+							</div>
+							<div class="MediaSlide">
+								<div class="MediaNumber">
+								4/9 - 36
+								</div>
+								<a href="../../../img/d/0/ebf1a7bebe8f47b74111d5150d.html">
+									<img src="../../../images/d/0/ebf1a7bebe8f47b74111d5150d.jpg" style="width:100%" />
+								</a>
+							</div>
+							<div class="MediaSlide">
+								<div class="MediaNumber">
+								5/9 - 33
+								</div>
+								<a href="../../../img/c/3/ebf1a777b55d0113c48836083c.html">
+									<img src="../../../images/c/3/ebf1a777b55d0113c48836083c.jpg" style="width:100%" />
+								</a>
+							</div>
+							<div class="MediaSlide">
+								<div class="MediaNumber">
+								6/9 - 33
+								</div>
+								<a href="../../../img/1/d/ebf1f23ecc5170f26d0e75176d1.html">
+									<img src="../../../images/1/d/ebf1f23ecc5170f26d0e75176d1.jpg" style="width:100%" />
+								</a>
+							</div>
+							<div class="MediaSlide">
+								<div class="MediaNumber">
+								7/9 - 34
+								</div>
+								<a href="../../../img/b/d/ebf1f2555cc374c11178b7022db.html">
+									<img src="../../../images/b/d/ebf1f2555cc374c11178b7022db.jpg" style="width:100%" />
+								</a>
+							</div>
+							<div class="MediaSlide">
+								<div class="MediaNumber">
+								8/9 - 35
+								</div>
+								<a href="../../../img/5/7/ebf1f28a4395e7e698bf4b8cf75.html">
+									<img src="../../../images/5/7/ebf1f28a4395e7e698bf4b8cf75.jpg" style="width:100%" />
+								</a>
+							</div>
+							<div class="MediaSlide">
+								<div class="MediaNumber">
+								9/9 - 36
+								</div>
+								<a href="../../../img/b/4/ebf1f2f5b93785e9d19e8166e4b.html">
+									<img src="../../../images/b/4/ebf1f2f5b93785e9d19e8166e4b.jpg" style="width:100%" />
+								</a>
+							</div>
+						</div>
+					</div>
+					<div id="medias">
+					</div>
 				</div>
 				<div class="fullclear"></div>
 			</div>
 			<div class="subsection" id="pedigree">
 				<h4>Pedigree</h4>
-				<ol class="pedigreegen">
+				<ol class="pedigreegen" id="toggle_pedigree" style="display:block">
 					<li>
 						<a href="../../../ppl/a/b/ebeb416f5b73a4f040e4661ccba.html">Nguyễn, Văn Phiên</a>
 						<ol>
@@ -388,153 +478,124 @@
 			</div>
 			<div class="subsection" id="tree">
 				<h4>Ancestors</h4>
-				<div id="treeContainer" style="width:1549px; height:525px; top: 0px">
-					<div class="boxbg male AncCol0" style="top: 305px; left: 6px;">
-						<a class="thumbnail" href="../../../ppl/9/a/ebeb2a448da361737c28cdf92a9.html">
-							<table class="table">
-								<tr>
-									<td class="img">
-										<img alt="Img: Nguyễn, Văn Quý" src="../../../thumb/1/1/ebf22344963580a0cdc7e19c611.png" />
-									</td>
-									<td class="name">
-									Nguyễn, Văn Quý<br/>*1904<br/>+6 December 1986
-									</td>
-								</tr>
-							</table>
-						</a>
+				<div class="tree" id="toggle_anc" style="display:block">
+					<div id="treeContainer" style="width:1234px; height:450px; top: 0px">
+						<div class="boxbg male AncCol0" style="top: 230px; left: 6px;">
+							<a class="thumbnail" href="../../../ppl/9/a/ebeb2a448da361737c28cdf92a9.html">
+								<table class="table">
+									<tr>
+										<td class="img">
+											<img alt="Img: Nguyễn, Văn Quý" src="../../../thumb/1/1/ebf22344963580a0cdc7e19c611.png" />
+										</td>
+										<td class="name">
+										Nguyễn, Văn Quý<br>*1905<br>+1986
+										</td>
+									</tr>
+								</table>
+							</a>
+						</div>
+						<div class="shadow" style="top: 235px; left: 10px;"></div>
+						<div class="bvline" style="top: 250px; left: 285px; width: 15px"></div>
+						<div class="gvline" style="top: 255px; left: 285px; width: 20px"></div>
+						<div class="boxbg male AncCol1" style="top: 155px; left: 316px;">
+							<a class="thumbnail" href="../../../ppl/a/b/ebeb416f5b73a4f040e4661ccba.html">
+								<table class="table">
+									<tr>
+										<td class="img">
+											<img alt="Img: Nguyễn, Văn Phiên" src="../../../thumb/5/6/ebf19a3e0277ada6c1cc22e7265.png" />
+										</td>
+										<td class="name">
+										Nguyễn, Văn Phiên<br>*<br>+...
+										</td>
+									</tr>
+								</table>
+							</a>
+						</div>
+						<div class="shadow" style="top: 160px; left: 320px;"></div>
+						<div class="bvline" style="top: 175px; left: 300px; width: 15px;"></div>
+					
+						<div class="bhline" style="top: 175px; left: 300px; height: 76px;"></div>
+					
+						<div class="bvline" style="top: 175px; left: 595px; width: 15px"></div>
+						<div class="gvline" style="top: 180px; left: 595px; width: 20px"></div>
+						<div class="boxbg male AncCol2" style="top: 80px; left: 626px;">
+							<a class="thumbnail" href="../../../ppl/a/b/ebeb49ebbcd275bf08f9c682bba.html">
+								<table class="table">
+									<tr>
+										<td class="img">
+											<img alt="Img: Nguyễn, Văn Dinh" src="../../../thumb/f/d/ebf18f0735f7a0b11de9a61ffdf.png" />
+										</td>
+										<td class="name">
+										Nguyễn, Văn Dinh<br>*<br>+...
+										</td>
+									</tr>
+								</table>
+							</a>
+						</div>
+						<div class="shadow" style="top: 85px; left: 630px;"></div>
+						<div class="bvline" style="top: 100px; left: 610px; width: 15px;"></div>
+					
+						<div class="bhline" style="top: 100px; left: 610px; height: 76px;"></div>
+					
+						<div class="bvline" style="top: 100px; left: 905px; width: 15px"></div>
+						<div class="gvline" style="top: 105px; left: 905px; width: 20px"></div>
+						<div class="boxbg male AncCol3" style="top: 5px; left: 936px;">
+							<a class="thumbnail" href="../../../ppl/2/6/ebeb4cd480e5d07469837324b62.html">
+								<table class="table">
+									<tr>
+										<td class="img">
+											<img alt="Img: Nguyễn, Văn Diên" src="../../../thumb/7/3/ebf18e69e8333855039c40e0f37.png" />
+										</td>
+										<td class="name">
+										Nguyễn, Văn Diên<br>*<br>+...
+										</td>
+									</tr>
+								</table>
+							</a>
+						</div>
+						<div class="shadow" style="top: 10px; left: 940px;"></div>
+						<div class="bvline" style="top: 25px; left: 920px; width: 15px;"></div>
+					
+						<div class="bhline" style="top: 25px; left: 920px; height: 76px;"></div>
+					
+						<div class="boxbg female AncCol3" style="top: 155px; left: 936px;">
+							<a class="noThumb" href="../../../ppl/9/f/ebeb4ef96c25d246fdc805f6bf9.html">
+							Xa, Thị Ngươn<br>*<br>+...
+							</a>
+						</div>
+						<div class="shadow" style="top: 160px; left: 940px;"></div>
+						<div class="bvline" style="top: 175px; left: 920px; width: 15px;"></div>
+					
+						<div class="bhline" style="top: 100px; left: 920px; height: 76px;"></div>
+					
+						<div class="boxbg female AncCol2" style="top: 230px; left: 626px;">
+							<a class="noThumb" href="../../../ppl/f/9/ebeb4b443369c449123d30689f.html">
+							Phạm, Thị Chú<br>*<br>+...
+							</a>
+						</div>
+						<div class="shadow" style="top: 235px; left: 630px;"></div>
+						<div class="bvline" style="top: 250px; left: 610px; width: 15px;"></div>
+					
+						<div class="bhline" style="top: 175px; left: 610px; height: 76px;"></div>
+					
+						<div class="boxbg female AncCol1" style="top: 305px; left: 316px;">
+							<a class="noThumb" href="../../../ppl/2/f/ebeb495fad0487c7650733431f2.html">
+							Huỳnh, Thị Ái<br>*<br>+...
+							</a>
+						</div>
+						<div class="shadow" style="top: 310px; left: 320px;"></div>
+						<div class="bvline" style="top: 325px; left: 300px; width: 15px;"></div>
+					
+						<div class="bhline" style="top: 250px; left: 300px; height: 76px;"></div>
+					
 					</div>
-					<div class="shadow" style="top: 310px; left: 10px;"></div>
-					<div class="bvline" style="top: 325px; left: 285px; width: 15px"></div>
-					<div class="gvline" style="top: 330px; left: 285px; width: 20px"></div>
-					<div class="boxbg male AncCol1" style="top: 230px; left: 316px;">
-						<a class="thumbnail" href="../../../ppl/a/b/ebeb416f5b73a4f040e4661ccba.html">
-							<table class="table">
-								<tr>
-									<td class="img">
-										<img alt="Img: Nguyễn, Văn Phiên" src="../../../thumb/5/6/ebf19a3e0277ada6c1cc22e7265.png" />
-									</td>
-									<td class="name">
-									Nguyễn, Văn Phiên<br/>*<br/>+...
-									</td>
-								</tr>
-							</table>
-						</a>
-					</div>
-					<div class="shadow" style="top: 235px; left: 320px;"></div>
-					<div class="bvline" style="top: 250px; left: 300px; width: 15px;"></div>
-				
-					<div class="bhline" style="top: 250px; left: 300px; height: 76px;"></div>
-				
-					<div class="bvline" style="top: 250px; left: 595px; width: 15px"></div>
-					<div class="gvline" style="top: 255px; left: 595px; width: 20px"></div>
-					<div class="boxbg male AncCol2" style="top: 155px; left: 626px;">
-						<a class="thumbnail" href="../../../ppl/a/b/ebeb49ebbcd275bf08f9c682bba.html">
-							<table class="table">
-								<tr>
-									<td class="img">
-										<img alt="Img: Nguyễn, Văn Dinh" src="../../../thumb/f/d/ebf18f0735f7a0b11de9a61ffdf.png" />
-									</td>
-									<td class="name">
-									Nguyễn, Văn Dinh<br/>*<br/>+...
-									</td>
-								</tr>
-							</table>
-						</a>
-					</div>
-					<div class="shadow" style="top: 160px; left: 630px;"></div>
-					<div class="bvline" style="top: 175px; left: 610px; width: 15px;"></div>
-				
-					<div class="bhline" style="top: 175px; left: 610px; height: 76px;"></div>
-				
-					<div class="bvline" style="top: 175px; left: 905px; width: 15px"></div>
-					<div class="gvline" style="top: 180px; left: 905px; width: 20px"></div>
-					<div class="boxbg male AncCol3" style="top: 80px; left: 936px;">
-						<a class="thumbnail" href="../../../ppl/2/6/ebeb4cd480e5d07469837324b62.html">
-							<table class="table">
-								<tr>
-									<td class="img">
-										<img alt="Img: Nguyễn, Văn Diên" src="../../../thumb/7/3/ebf18e69e8333855039c40e0f37.png" />
-									</td>
-									<td class="name">
-									Nguyễn, Văn Diên<br/>*<br/>+...
-									</td>
-								</tr>
-							</table>
-						</a>
-					</div>
-					<div class="shadow" style="top: 85px; left: 940px;"></div>
-					<div class="bvline" style="top: 100px; left: 920px; width: 15px;"></div>
-				
-					<div class="bhline" style="top: 100px; left: 920px; height: 76px;"></div>
-				
-					<div class="bvline" style="top: 100px; left: 1215px; width: 15px"></div>
-					<div class="gvline" style="top: 105px; left: 1215px; width: 20px"></div>
-					<div class="boxbg male AncCol4" style="top: 5px; left: 1246px;">
-						<a class="thumbnail" href="../../../ppl/4/2/ebeb5033bab401a3e6dd2d50724.html">
-							<table class="table">
-								<tr>
-									<td class="img">
-										<img alt="Img: Nguyễn, Văn Đáng" src="../../../thumb/7/3/ebf18de35b455d27c0cc4916e37.png" />
-									</td>
-									<td class="name">
-									Nguyễn, Văn Đáng<br/>*<br/>+...
-									</td>
-								</tr>
-							</table>
-						</a>
-					</div>
-					<div class="shadow" style="top: 10px; left: 1250px;"></div>
-					<div class="bvline" style="top: 25px; left: 1230px; width: 15px;"></div>
-				
-					<div class="bhline" style="top: 25px; left: 1230px; height: 76px;"></div>
-				
-					<div class="boxbg female AncCol4" style="top: 155px; left: 1246px;">
-						<a class="noThumb" href="../../../ppl/0/0/ebeb5053ef972766ee1d18e9c00.html">
-						Lê, Thị Bích<br/>*<br/>+...
-						</a>
-					</div>
-					<div class="shadow" style="top: 160px; left: 1250px;"></div>
-					<div class="bvline" style="top: 175px; left: 1230px; width: 15px;"></div>
-				
-					<div class="bhline" style="top: 100px; left: 1230px; height: 76px;"></div>
-				
-					<div class="boxbg female AncCol3" style="top: 230px; left: 936px;">
-						<a class="noThumb" href="../../../ppl/9/f/ebeb4ef96c25d246fdc805f6bf9.html">
-						Xa, Thị Ngươn<br/>*<br/>+...
-						</a>
-					</div>
-					<div class="shadow" style="top: 235px; left: 940px;"></div>
-					<div class="bvline" style="top: 250px; left: 920px; width: 15px;"></div>
-				
-					<div class="bhline" style="top: 175px; left: 920px; height: 76px;"></div>
-				
-					<div class="boxbg female AncCol2" style="top: 305px; left: 626px;">
-						<a class="noThumb" href="../../../ppl/f/9/ebeb4b443369c449123d30689f.html">
-						Phạm, Thị Chú<br/>*<br/>+...
-						</a>
-					</div>
-					<div class="shadow" style="top: 310px; left: 630px;"></div>
-					<div class="bvline" style="top: 325px; left: 610px; width: 15px;"></div>
-				
-					<div class="bhline" style="top: 250px; left: 610px; height: 76px;"></div>
-				
-					<div class="boxbg female AncCol1" style="top: 380px; left: 316px;">
-						<a class="noThumb" href="../../../ppl/2/f/ebeb495fad0487c7650733431f2.html">
-						Huỳnh, Thị Ái<br/>*<br/>+...
-						</a>
-					</div>
-					<div class="shadow" style="top: 385px; left: 320px;"></div>
-					<div class="bvline" style="top: 400px; left: 300px; width: 15px;"></div>
-				
-					<div class="bhline" style="top: 325px; left: 300px; height: 76px;"></div>
-				
 				</div>
 			</div>
 		</div>
 		<div class="fullclear"></div>
 		<div id="footer">
 			<p id="createdate">
-			Generated by <a href="http://gramps-project.org/">Gramps</a> GrampsAIO64-5.1.3-2<br />Last change was the 2022-05-06 08:51:32
+			Generated by <a href="http://gramps-project.org/">Gramps</a> AIO64-5.2.3-r1-aa03f5a<br />Last change was the 2021-05-20 16:58:30
 			</p>
 			<p id="copyright">
 			

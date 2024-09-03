@@ -1,36 +1,74 @@
 <!DOCTYPE html>
-<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head lang="en">
-	<title>My Family Tree - Nguyễn, Thị Muội</title>
+<html xml:lang="en" lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+<head dir="ltr" lang="en">
+	<title>Gia Pha - Nguyễn, Thị Muội</title>
 	<meta charset="UTF-8" />
-	<meta name ="viewport" content="width=device-width; height=device-height; initial-scale=1.0; minimum-scale=0.5; maximum-scale=10.0; user-scalable=yes" />
+	<meta name ="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=0.5, maximum-scale=10.0, user-scalable=yes" />
 	<meta name ="apple-mobile-web-app-capable" content="yes" />
-	<meta name="generator" content="Gramps GrampsAIO64-5.1.3-2 http://gramps-project.org/" />
+	<meta name="generator" content="Gramps AIO64-5.2.3-r1-aa03f5a http://gramps-project.org/" />
 	<meta name="author" content="" />
+	<meta name="robots" content="noindex" />
+	<meta name="googlebot" content="noindex" />
 	<link href="../../../images/favicon2.ico" rel="shortcut icon" type="image/x-icon" />
+	<link href="../../../css/ancestortree.css" media="screen" rel="stylesheet" type="text/css" />
 	<link href="../../../css/narrative-print.css" media="print" rel="stylesheet" type="text/css" />
 	<link href="../../../css/narrative-screen.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="../../../css/Basic-Ash.css" media="screen" rel="alternate stylesheet" title="Basic-Ash" type="text/css" />
+	<link href="../../../css/Basic-Blue.css" media="screen" rel="alternate stylesheet" title="Basic-Blue" type="text/css" />
+	<link href="../../../css/Basic-Cypress.css" media="screen" rel="alternate stylesheet" title="Basic-Cypress" type="text/css" />
+	<link href="../../../css/Basic-Lilac.css" media="screen" rel="alternate stylesheet" title="Basic-Lilac" type="text/css" />
+	<link href="../../../css/Basic-Peach.css" media="screen" rel="alternate stylesheet" title="Basic-Peach" type="text/css" />
+	<link href="../../../css/Basic-Spruce.css" media="screen" rel="alternate stylesheet" title="Basic-Spruce" type="text/css" />
+	<link href="../../../css/Mainz.css" media="screen" rel="alternate stylesheet" title="Mainz" type="text/css" />
+	<link href="../../../css/Nebraska.css" media="screen" rel="alternate stylesheet" title="Nebraska" type="text/css" />
 	<script>function navFunction() { var x = document.getElementById("dropmenu"); if (x.className === "nav") { x.className += " responsive"; } else { x.className = "nav"; } }</script>
-	<link href="../../../css/ancestortree.css" media="screen" rel="stylesheet" type="text/css" />
 </head>
-<body>
+<body dir="ltr">
 	<div id="outerwrapper">
-		<div id="header">
-			<a href="javascript:void(0);" class="navIcon" onclick="navFunction()">&#8801;</a>
-			<h1 id="SiteTitle">My Family Tree</h1>
+		<div class="ltr" id="header">
+			<button href="javascript:void(0);" class="navIcon" onclick="navFunction()">&#8801;</button>
+			<h1 class="nav" id="SiteTitle">Gia Pha</h1>
 		</div>
-		<div class="wrappernav" id="nav" role="navigation">
+		<div class="wrappernav ltr" id="nav" role="navigation">
 			<div class="container">
-				<ul class="nav" id="dropmenu">
+				<ul class="nav dropmenu" id="dropmenu">
 					<li class = "CurrentSection"><a href="../../../individuals.html" title="Individuals">Individuals</a></li>
 					<li><a href="../../../index.html" title="Surnames">Surnames</a></li>
-					<li><a href="../../../media.html" title="Media">Media</a></li>
-					<li><a href="../../../thumbnails.html" title="Thumbnails">Thumbnails</a></li>
-					<li><a onclick="history.go(-1);">Previous</a></li>
-					<li><a onclick="history.go(+1);">Next</a></li>
+					<li><a href="../../../updates.html" title="Updates">Updates</a></li>
 				</ul>
 			</div>
 		</div>
+		<button id="gototop" onclick="GoToTop()" title="Go to top">
+			<svg class="triangle" viewBox="0 0 100 100">
+				<polygon points="0,100 100,100, 50,10">
+				</polygon>
+			</svg>
+		</button>
+	
+<script>
+//Get the button
+var gototop = document.getElementById("gototop");
+
+// When the user scrolls down 200px from the top of the document,
+// show the button
+window.onscroll = function() {scroll()};
+
+function scroll() {
+  if (document.body.scrollTop > 200 ||
+      document.documentElement.scrollTop > 200) {
+    gototop.style.display = "block";
+  } else {
+    gototop.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function GoToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
 		<div class="content" id="IndividualDetail">
 			<h3>Nguyễn, Thị Muội<sup><small></small></sup></h3>
 			<div id="summaryarea">
@@ -52,19 +90,22 @@
 				</table>
 			</div>
 			<div class="subsection narrative">
-				<h4>Narrative</h4>
-				<div class="grampsstylednote">
-					<p>
-					Trong ba người con gái của Nguyễn Công Tấn, đặc biệt có bà Nguyễn Thị Muội, hiệu Diệu Điển thiền sư, là “người có nhan sắc lại thông tuệ, từng thiệp liệp kinh sử, giỏi văn thơ, được mọi người ví như Thái Cơ, Tạ Uẩn” (GP). Năm 16 tuổi, bà lấy chồng là Trang tiết Hiệu úy Nguyễn Đống, con trai cả của quan Tham chính, cháu ông Tham đốc họ Nguyễn ở xã Tiên Điền, sau ba năm bà sinh con gái nhưng rồi chống mất, con gái cũng chết, bà đã toan chết theo chồng con nhưng được mọi người ngăn cản lại. Lúc bà 20 tuổi, quân Tây Sơn bình định miền Bắc, thân thích nhà chồng chạy loạn hết (dinh cơ họ Nguyễn – Tiên Điền cũng bị đốt phá, thiêu rụi), bà làm nhà cạnh nhà cũ của chồng, suốt ngày đóng cửa cài then. Có viên Trấn thủ Nghệ An là Trần Thận biết được phẩm hạnh của bà, cho người đến mai mối. Gia phả ghi câu trả lời của bà: “Thân góa bụa chưa chết này thường nghe: người phụ nữ thờ chồng cho đến chết, nay chồng vừa mất, đã không chết được theo chồng lại “ôm đàn tỳ bà qua thuyền khác” thì còn mặt mũi nào đứng ở trong đời. Nhờ nói giùm tôi như vậy. Nếu bị ép buộc, tôi chỉ còn đường trẫm mình xuống dòng nước xanh mà kết liễu cuộc đời thôi”. Viên Trấn thủ biết không lay chuyển được nên ngay đêm ấy đem quân bủa vây nơi ở; nghe có biến, bà sai người hầu mang áo dài trùm kín lẻn ra ngoài. Mấy tháng sau người nhà mới biết bà đã trốn vào chùa Đỗ Phật ở xã Thuần Chân, huyện Thiên Lộc (nay là xã Thuần Thiện, huyện Can Lộc), cắt tóc đi tu. Năm Minh Mệnh thứ 18 (1837), bà được ban cờ Tiết nghĩa, ban sắc “Trinh tiết khả phong”. Lúc bấy giờ Nguyễn Công Trứ (em trai bà) đang làm Tổng đốc Hải Yên đã xuất tiền lệnh cho bản xã sửa lại chùa Viên Quang[6] ở quê đón bà về trụ trì; còn biển vàng vua ban thì bản xã dựng ngôi nhà ngói phía tây treo lên “để làm rõ ân điển triều đình”, ngôi nhà này được nhân dân địa phương gọi là Đình Trinh Tiết. Sau khi bà Diệu Điển mất (năm Thiệu Trị thứ 2, 1841), chùa và đình đều bị hư hại nặng; năm Tự Đức thứ 28 (1875, lúc đó Nguyễn Công Trứ cũng đã qua đời), con cháu mới tìm địa điểm mới dựng lại am và đình, trong am có câu đối: Dương dương chính khí từ vân hợp; Hách hách trinh tâm bạch nhật huyền (Rỡ ràng chính khí mây từ hội; Son sắt lòng trinh giữa đất trời). Bài Đề từ trong am cũng khá dài, có đoạn: Lúc sống được ban cờ tiết, mất đi còn mãi tiếng thơm; chính khí cùng Hồng Lam sống mãi; thanh danh cùng trung hiếu vẹn tròn. Do vậy, sau trăm năm tiếng thơm vẫn hưng khởi lòng người, chứ đâu phải tán dương mà được vậy...
-					</p>
-					<p>
-					Tên tuổi bà và chùa Viên Quang, Đình Trinh Tiết đã được sách Nghi xuân địa chí của Lê Văn Diễn ghi chép, trong mục Liệt nữ, Chùa chiền, Đình[7]và nhiều sử sách đề cập đến.
-					</p>
+				<h4>Notes</h4>
+				<div class="subsection narrative" id="toggle_note" style="display:block">
+					<h4>Note</h4>
+					<div class="grampsstylednote">
+						<p>
+						Trong ba người con gái của Nguyễn Công Tấn, đặc biệt có bà Nguyễn Thị Muội, hiệu Diệu Điển thiền sư, là “người có nhan sắc lại thông tuệ, từng thiệp liệp kinh sử, giỏi văn thơ, được mọi người ví như Thái Cơ, Tạ Uẩn” (GP). Năm 16 tuổi, bà lấy chồng là Trang tiết Hiệu úy Nguyễn Đống, con trai cả của quan Tham chính, cháu ông Tham đốc họ Nguyễn ở xã Tiên Điền, sau ba năm bà sinh con gái nhưng rồi chống mất, con gái cũng chết, bà đã toan chết theo chồng con nhưng được mọi người ngăn cản lại. Lúc bà 20 tuổi, quân Tây Sơn bình định miền Bắc, thân thích nhà chồng chạy loạn hết (dinh cơ họ Nguyễn – Tiên Điền cũng bị đốt phá, thiêu rụi), bà làm nhà cạnh nhà cũ của chồng, suốt ngày đóng cửa cài then. Có viên Trấn thủ Nghệ An là Trần Thận biết được phẩm hạnh của bà, cho người đến mai mối. Gia phả ghi câu trả lời của bà: “Thân góa bụa chưa chết này thường nghe: người phụ nữ thờ chồng cho đến chết, nay chồng vừa mất, đã không chết được theo chồng lại “ôm đàn tỳ bà qua thuyền khác” thì còn mặt mũi nào đứng ở trong đời. Nhờ nói giùm tôi như vậy. Nếu bị ép buộc, tôi chỉ còn đường trẫm mình xuống dòng nước xanh mà kết liễu cuộc đời thôi”. Viên Trấn thủ biết không lay chuyển được nên ngay đêm ấy đem quân bủa vây nơi ở; nghe có biến, bà sai người hầu mang áo dài trùm kín lẻn ra ngoài. Mấy tháng sau người nhà mới biết bà đã trốn vào chùa Đỗ Phật ở xã Thuần Chân, huyện Thiên Lộc (nay là xã Thuần Thiện, huyện Can Lộc), cắt tóc đi tu. Năm Minh Mệnh thứ 18 (1837), bà được ban cờ Tiết nghĩa, ban sắc “Trinh tiết khả phong”. Lúc bấy giờ Nguyễn Công Trứ (em trai bà) đang làm Tổng đốc Hải Yên đã xuất tiền lệnh cho bản xã sửa lại chùa Viên Quang[6] ở quê đón bà về trụ trì; còn biển vàng vua ban thì bản xã dựng ngôi nhà ngói phía tây treo lên “để làm rõ ân điển triều đình”, ngôi nhà này được nhân dân địa phương gọi là Đình Trinh Tiết. Sau khi bà Diệu Điển mất (năm Thiệu Trị thứ 2, 1841), chùa và đình đều bị hư hại nặng; năm Tự Đức thứ 28 (1875, lúc đó Nguyễn Công Trứ cũng đã qua đời), con cháu mới tìm địa điểm mới dựng lại am và đình, trong am có câu đối: Dương dương chính khí từ vân hợp; Hách hách trinh tâm bạch nhật huyền (Rỡ ràng chính khí mây từ hội; Son sắt lòng trinh giữa đất trời). Bài Đề từ trong am cũng khá dài, có đoạn: Lúc sống được ban cờ tiết, mất đi còn mãi tiếng thơm; chính khí cùng Hồng Lam sống mãi; thanh danh cùng trung hiếu vẹn tròn. Do vậy, sau trăm năm tiếng thơm vẫn hưng khởi lòng người, chứ đâu phải tán dương mà được vậy...
+						</p>
+						<p>
+						Tên tuổi bà và chùa Viên Quang, Đình Trinh Tiết đã được sách Nghi xuân địa chí của Lê Văn Diễn ghi chép, trong mục Liệt nữ, Chùa chiền, Đình[7]và nhiều sử sách đề cập đến.
+						</p>
+					</div>
 				</div>
 			</div>
 			<div class="subsection" id="parents">
 				<h4>Parents</h4>
-				<table class="infolist">
+				<table class="infolist toggle_parent ltr" id="toggle_parent" style="display:block">
 					<thead>
 						<tr>
 							<th class="ColumnAttribute">Relation to main person</th>
@@ -86,8 +127,8 @@
 						<tr>
 							<td class="ColumnAttribute">&nbsp;&nbsp;&nbsp;&nbsp;Brother</td>
 							<td class="ColumnValue">&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../ppl/0/9/ebf5bd37e697694cf883c7ed490.html">Nguyễn, Công Trứ</a></td>
-							<td class="ColumnDate">19 December 1778</td>
-							<td class="ColumnDate">17 December 1858</td>
+							<td class="ColumnDate">1778-12-19</td>
+							<td class="ColumnDate">1858-12-17</td>
 							<td class="ColumnValue"></td>
 						</tr>
 						<tr>
@@ -116,7 +157,7 @@
 			</div>
 			<div class="subsection" id="pedigree">
 				<h4>Pedigree</h4>
-				<ol class="pedigreegen">
+				<ol class="pedigreegen" id="toggle_pedigree" style="display:block">
 					<li>
 						<a href="../../../ppl/b/f/ebf5be0def015631b40902263fb.html">Nguyễn, Công Tấn</a>
 						<ol>
@@ -143,86 +184,88 @@
 			</div>
 			<div class="subsection" id="tree">
 				<h4>Ancestors</h4>
-				<div id="treeContainer" style="width:1234px; height:450px; top: 0px">
-					<div class="boxbg female AncCol0" style="top: 230px; left: 6px;">
-						<a class="noThumb" href="../../../ppl/d/9/ebf8308c68b7a1ab09e62ffd9d.html">
-						Nguyễn, Thị Muội<br/>*<br/>+...
-						</a>
+				<div class="tree" id="toggle_anc" style="display:block">
+					<div id="treeContainer" style="width:1234px; height:450px; top: 0px">
+						<div class="boxbg female AncCol0" style="top: 230px; left: 6px;">
+							<a class="noThumb" href="../../../ppl/d/9/ebf8308c68b7a1ab09e62ffd9d.html">
+							Nguyễn, Thị Muội<br>*<br>+...
+							</a>
+						</div>
+						<div class="shadow" style="top: 235px; left: 10px;"></div>
+						<div class="bvline" style="top: 250px; left: 285px; width: 15px"></div>
+						<div class="gvline" style="top: 255px; left: 285px; width: 20px"></div>
+						<div class="boxbg male AncCol1" style="top: 155px; left: 316px;">
+							<a class="noThumb" href="../../../ppl/b/f/ebf5be0def015631b40902263fb.html">
+							Nguyễn, Công Tấn<br>*<br>+1800
+							</a>
+						</div>
+						<div class="shadow" style="top: 160px; left: 320px;"></div>
+						<div class="bvline" style="top: 175px; left: 300px; width: 15px;"></div>
+					
+						<div class="bhline" style="top: 175px; left: 300px; height: 76px;"></div>
+					
+						<div class="bvline" style="top: 175px; left: 595px; width: 15px"></div>
+						<div class="gvline" style="top: 180px; left: 595px; width: 20px"></div>
+						<div class="boxbg male AncCol2" style="top: 80px; left: 626px;">
+							<a class="noThumb" href="../../../ppl/5/2/ebf8217fbd3759468082ff2ab25.html">
+							Nguyễn, Minh Kỉnh<br>*<br>+17-10
+							</a>
+						</div>
+						<div class="shadow" style="top: 85px; left: 630px;"></div>
+						<div class="bvline" style="top: 100px; left: 610px; width: 15px;"></div>
+					
+						<div class="bhline" style="top: 100px; left: 610px; height: 76px;"></div>
+					
+						<div class="bvline" style="top: 100px; left: 905px; width: 15px"></div>
+						<div class="gvline" style="top: 105px; left: 905px; width: 20px"></div>
+						<div class="boxbg male AncCol3" style="top: 5px; left: 936px;">
+							<a class="noThumb" href="../../../ppl/b/f/ebf828765395694efd42666f0fb.html">
+							Nguyễn, Anh Mại<br>*28-09<br>+...
+							</a>
+						</div>
+						<div class="shadow" style="top: 10px; left: 940px;"></div>
+						<div class="bvline" style="top: 25px; left: 920px; width: 15px;"></div>
+					
+						<div class="bhline" style="top: 25px; left: 920px; height: 76px;"></div>
+					
+						<div class="boxbg female AncCol3" style="top: 155px; left: 936px;">
+							<a class="noThumb" href="../../../ppl/6/b/ebf82943e49c577ce7f3ae24b6.html">
+							Dương<br>*11-05<br>+...
+							</a>
+						</div>
+						<div class="shadow" style="top: 160px; left: 940px;"></div>
+						<div class="bvline" style="top: 175px; left: 920px; width: 15px;"></div>
+					
+						<div class="bhline" style="top: 100px; left: 920px; height: 76px;"></div>
+					
+						<div class="boxbg female AncCol2" style="top: 230px; left: 626px;">
+							<a class="noThumb" href="../../../ppl/3/1/ebf82734011191f06cb26717013.html">
+							Đặng, Thị Thiệp<br>*<br>+7-10
+							</a>
+						</div>
+						<div class="shadow" style="top: 235px; left: 630px;"></div>
+						<div class="bvline" style="top: 250px; left: 610px; width: 15px;"></div>
+					
+						<div class="bhline" style="top: 175px; left: 610px; height: 76px;"></div>
+					
+						<div class="boxbg female AncCol1" style="top: 305px; left: 316px;">
+							<a class="noThumb" href="../../../ppl/6/2/ebf8260eafb6de9fc3c5f3c626.html">
+							Nguyễn, Thị Phan<br>*<br>+...
+							</a>
+						</div>
+						<div class="shadow" style="top: 310px; left: 320px;"></div>
+						<div class="bvline" style="top: 325px; left: 300px; width: 15px;"></div>
+					
+						<div class="bhline" style="top: 250px; left: 300px; height: 76px;"></div>
+					
 					</div>
-					<div class="shadow" style="top: 235px; left: 10px;"></div>
-					<div class="bvline" style="top: 250px; left: 285px; width: 15px"></div>
-					<div class="gvline" style="top: 255px; left: 285px; width: 20px"></div>
-					<div class="boxbg male AncCol1" style="top: 155px; left: 316px;">
-						<a class="noThumb" href="../../../ppl/b/f/ebf5be0def015631b40902263fb.html">
-						Nguyễn, Công Tấn<br/>*<br/>+1800
-						</a>
-					</div>
-					<div class="shadow" style="top: 160px; left: 320px;"></div>
-					<div class="bvline" style="top: 175px; left: 300px; width: 15px;"></div>
-				
-					<div class="bhline" style="top: 175px; left: 300px; height: 76px;"></div>
-				
-					<div class="bvline" style="top: 175px; left: 595px; width: 15px"></div>
-					<div class="gvline" style="top: 180px; left: 595px; width: 20px"></div>
-					<div class="boxbg male AncCol2" style="top: 80px; left: 626px;">
-						<a class="noThumb" href="../../../ppl/5/2/ebf8217fbd3759468082ff2ab25.html">
-						Nguyễn, Minh Kỉnh<br/>*<br/>+October 17
-						</a>
-					</div>
-					<div class="shadow" style="top: 85px; left: 630px;"></div>
-					<div class="bvline" style="top: 100px; left: 610px; width: 15px;"></div>
-				
-					<div class="bhline" style="top: 100px; left: 610px; height: 76px;"></div>
-				
-					<div class="bvline" style="top: 100px; left: 905px; width: 15px"></div>
-					<div class="gvline" style="top: 105px; left: 905px; width: 20px"></div>
-					<div class="boxbg male AncCol3" style="top: 5px; left: 936px;">
-						<a class="noThumb" href="../../../ppl/b/f/ebf828765395694efd42666f0fb.html">
-						Nguyễn, Anh Mại<br/>*September 28<br/>+...
-						</a>
-					</div>
-					<div class="shadow" style="top: 10px; left: 940px;"></div>
-					<div class="bvline" style="top: 25px; left: 920px; width: 15px;"></div>
-				
-					<div class="bhline" style="top: 25px; left: 920px; height: 76px;"></div>
-				
-					<div class="boxbg female AncCol3" style="top: 155px; left: 936px;">
-						<a class="noThumb" href="../../../ppl/6/b/ebf82943e49c577ce7f3ae24b6.html">
-						Dương<br/>*May 11<br/>+...
-						</a>
-					</div>
-					<div class="shadow" style="top: 160px; left: 940px;"></div>
-					<div class="bvline" style="top: 175px; left: 920px; width: 15px;"></div>
-				
-					<div class="bhline" style="top: 100px; left: 920px; height: 76px;"></div>
-				
-					<div class="boxbg female AncCol2" style="top: 230px; left: 626px;">
-						<a class="noThumb" href="../../../ppl/3/1/ebf82734011191f06cb26717013.html">
-						Đặng, Thị Thiệp<br/>*<br/>+October 7
-						</a>
-					</div>
-					<div class="shadow" style="top: 235px; left: 630px;"></div>
-					<div class="bvline" style="top: 250px; left: 610px; width: 15px;"></div>
-				
-					<div class="bhline" style="top: 175px; left: 610px; height: 76px;"></div>
-				
-					<div class="boxbg female AncCol1" style="top: 305px; left: 316px;">
-						<a class="noThumb" href="../../../ppl/6/2/ebf8260eafb6de9fc3c5f3c626.html">
-						Nguyễn, Thị Phan<br/>*<br/>+...
-						</a>
-					</div>
-					<div class="shadow" style="top: 310px; left: 320px;"></div>
-					<div class="bvline" style="top: 325px; left: 300px; width: 15px;"></div>
-				
-					<div class="bhline" style="top: 250px; left: 300px; height: 76px;"></div>
-				
 				</div>
 			</div>
 		</div>
 		<div class="fullclear"></div>
 		<div id="footer">
 			<p id="createdate">
-			Generated by <a href="http://gramps-project.org/">Gramps</a> GrampsAIO64-5.1.3-2<br />Last change was the 2021-05-21 11:07:45
+			Generated by <a href="http://gramps-project.org/">Gramps</a> AIO64-5.2.3-r1-aa03f5a<br />Last change was the 2021-05-21 12:07:45
 			</p>
 			<p id="copyright">
 			
